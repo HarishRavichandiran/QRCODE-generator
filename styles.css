@@ -1,0 +1,63 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: blue;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    /* text-align: center; */
+    text-align: left;
+    padding-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+
+input,
+select,
+button {
+    margin-top: 5px;
+    padding: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#qr-code-container {
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+}
+
+#qr-code {
+    max-width: 100%;
+}
+
+#download-link {
+    display: none;
+}

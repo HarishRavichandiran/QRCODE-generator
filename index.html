@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>You wanna generate a qr code try this .</h1>
+        <form id="qr-form">
+            <label for="data">Data:</label>
+            <input type="text" id="data" required>
+            
+            <label for="width">Image Width (px):</label>
+            <input type="number" id="width" min="1" required>
+            
+            <label for="height">Image Height (px):</label>
+            <input type="number" id="height" min="1" required>
+            
+            <label for="format">QR Image Format:</label>
+            <select id="format">
+                <option value="jpg">SVG</option>
+                <option value="png">JPG</option>
+                <option value="svg">PNG</option>
+            </select>
+            
+            <label for="qr-color">QR Code Color:</label>
+            <input type="color" id="qr-color" value="#000000">
+            
+            <label for="bg-color">Background Color:</label>
+            <input type="color" id="bg-color" value="#ffffff">
+            
+            <button type="submit">Generate</button>
+        </form>
+        
+        <div id="qr-code-container">
+            <img id="qr-code" alt="Generated QR Code">
+            <a id="download-link" download="qrcode.png"><button>Download</button></a>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
